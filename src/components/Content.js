@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Content({ str }) {
+function Content({ children }) {
     return (
         <div>
-            {str}
+            { children === '' ? '请点击菜单项' : `你点击的菜单名为: ${children}` }
         </div>
     )
 }

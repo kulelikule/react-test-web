@@ -1,5 +1,53 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header {
+    height: 60px;
+    line-height: 60px;
+    background-color: #000;
+}
+.header .nav-item{
+    float: left;
+    color: #fff;
+    margin-left: 20px;
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+}
+.footer .company-list {
+    float: right;
+    margin-right: 20px;
+}
+.footer .company-item {
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.footer .company-item .company-del {
+    display: none;
+    position: absolute;
+    right: -10px;
+    top: 21px;
+    width: 16px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+.footer .company-item .company-del::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(90deg);
+}
+.footer .company-item:hover .company-del {
+    display: block;
 }

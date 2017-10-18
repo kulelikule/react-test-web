@@ -4,3 +4,10 @@ export function navClick(index) {
         payload: index
     }
 }
+
+export function terminate(id) {
+    return {
+        type: 'DEL_COMPANY',
+        payload: id
+    }
+}

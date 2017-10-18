@@ -6,7 +6,7 @@ function Header({ items, navClick }) {
         <div className="nav-item" key={item} onClick={() => { navClick(item) }}>{item}</div>
     ))
     return (
-        <div>
+        <div className="header">
             {navItems}
         </div>
     )
